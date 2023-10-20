@@ -1,11 +1,11 @@
 <?php
-class Toy extends Products
+class Toy extends Product
 {
 
-    public $use;
+    public $variant;
 
-    public function __construct($use)
+    public function __construct($variant)
     {
-        $this->use = $use;
+        $this->variant = $variant;
     }
 }

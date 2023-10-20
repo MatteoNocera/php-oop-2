@@ -1,5 +1,5 @@
 <?php
-class Kennel extends Products
+class Kennel extends Product
 {
     public $material;
 

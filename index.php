@@ -10,7 +10,10 @@ Bonus (non opzionale):
 organizzate il progetto come visto stamattina a lezione usando varie sottocartelle per inserire classi, layout e dati.
 */
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
+include __DIR__ . '/database/db.php';
 
 
 ?>
