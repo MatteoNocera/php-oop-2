@@ -10,45 +10,22 @@ Bonus (non opzionale):
 organizzate il progetto come visto stamattina a lezione usando varie sottocartelle per inserire classi, layout e dati.
 */
 
-class Products
-{
 
-    public $name;
-    public $price;
-    public $quantity;
-    public $dimension;
-}
 
-class DogProducts extends Products
-{
 
-    public $name;
-    public $icon;
-    public $img_path;
-}
+?>
 
-class CatProducts extends Products
-{
+<!DOCTYPE html>
+<html lang="en">
 
-    public $name;
-    public $icon;
-    public $img_path;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+</head>
 
-class Food extends Products
-{
+<body>
 
-    public $kg;
-}
+</body>
 
-class Toy extends Products
-{
-
-    public $use;
-}
-
-class Kennel extends Products
-{
-
-    public $material;
-}
+</html>
