@@ -4,7 +4,6 @@ class Product extends Category
 
     public $name;
     public $category;
-    public $species_for;
     public $price;
     public $quantity;
     public $dimension;
