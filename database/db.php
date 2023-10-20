@@ -10,7 +10,8 @@ require __DIR__ . '/../models/Food.php';
 
 $pallaMSize = new Toy('m');
 $pallaMaterial = new Kennel('plastic');
+$pallaCategory = new Category('dog');
 
-$palla = new Product('gatto', 'palla da tennis', 3.99, 150, '10cm', '🐶', 'https://picsum.photos/200/300', $pallaMaterial, $pallaMSize);
+$palla = new Product($pallaCategory, 'palla da tennis', 3.99, 150, '10cm', '🐶', 'https://picsum.photos/200/300', $pallaMaterial, $pallaMSize);
 
 var_dump($palla);
