@@ -5,7 +5,9 @@
             <?php foreach ($ecommerce as $product) : ?>
                 <div class="col">
                     <div class="card bg-warning bg-gradient rounded border-0 h-100">
-                        <img src="<?= $product->icon ?>" alt="" width="50" class="">
+                        <a href="#">
+                            <img src="<?= $product->icon ?>" alt="" width="50" class="p-1">
+                        </a>
                         <img src="<?= $product->img_path ?>" alt="" class="card-img-top p-4 rounded-circle">
                         <div class="card-body">
                             <h2><?= $product->name ?></h2>
