@@ -13,22 +13,18 @@ organizzate il progetto come visto stamattina a lezione usando varie sottocartel
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-include __DIR__ . '/database/db.php';
+require __DIR__ . '/database/db.php';
 
-
+include __DIR__ . '/layouts/head.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Shop</title>
-</head>
 
-<body>
 
-</body>
 
-</html>
+<?php include __DIR__ . '/layouts/main.php' ?>
+
+
+<?php include __DIR__ . '/layouts/foot.php' ?>
+    
+

@@ -12,19 +12,19 @@ $catCategory = new Category('cat');
 
 
 // Palla Cane
-$palla = new Toy($dogCategory, 'palla da tennis', 3.99, 150, '10cm', '🐶', 'https://picsum.photos/200/300', 'm');
+$palla = new Toy($dogCategory, 'palla da tennis', 3.99, 150, '10cm', './assets/img/dog.png', 'https://picsum.photos/200/200', 'm');
 
 
 // Biscotti Gatto
-$biscuitsOne = new Food($catCategory, 'BiscuitsOne', 15.49, 20, '25x25', '🐱', 'https://picsum.photos/200/300', '1kg', 'Medium', 'Puppy');
+$biscuitsOne = new Food($catCategory, 'BiscuitsOne', 15.49, 20, '25x25', './assets/img/cat.png', 'https://picsum.photos/200/200', '1kg', 'Medium', 'Puppy');
+
 
 
 // Umido Cane
-$umidoPlus = new Food($dogCategory, 'Umido Plus', 3.45, 58, '20x30', '🐶', 'https://picsum.photos/200/300', '400gr', 'Hight Quality', 'Sterilized');
+$umidoPlus = new Food($dogCategory, 'Umido Plus', 3.45, 58, '20x30', './assets/img/dog.png', 'https://picsum.photos/200/200', '400gr', 'Hight Quality', 'Sterilized');
 
 // Casetta Gatto
-$catBox = new Kennel($catCategory, 'CatBox', 53.99, 15, '100x70', '🐱', 'https://picsum.photos/200/300', 'wood');
+$catBox = new Kennel($catCategory, 'CatBox', 53.99, 15, '100x70', './assets/img/cat.png', 'https://picsum.photos/200/200', 'wood');
 
 
-
-var_dump($catBox);
+array_push($ecommerce, $palla, $biscuitsOne, $umidoPlus, $catBox);
