@@ -21,10 +21,9 @@
                                 </h6>
                             </div>
 
-
-
-
                             <p>Restano ancora <?= $product->stock_quantity ?> pezzi</p>
+
+                            <button class="btn btn-dark btn-lg text-warning" type="button">Buy</button>
 
                         </div>
                     </div>
