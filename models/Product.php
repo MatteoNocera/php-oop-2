@@ -24,7 +24,7 @@ class Product extends Category
         $this->category = $category;
         $this->id = $id;
         $this->name = $name;
-        $this->discount = 0;
+        $this->discount = $discount;
         $this->price = $price;
         $this->stock_quantity = $stock_quantity;
         $this->dimension = $dimension;
@@ -34,8 +34,27 @@ class Product extends Category
 
     public function calcDiscount($discount)
     {
-        if ($discount > 0) {
-            $this->price = $this->price - $this->price * $this->discount;
+
+
+
+        try {
+            if ($discount || $this->discount >= 0) {
+
+                if (!is_numeric($discount)) {
+                    // exception if discount is not a number
+                    throw new Exception('Discount insert is not a nuber');
+                } elseif ($discount < 0 || $discount > 60) {
+                    // exception if range is't accepted
+                    throw new RangeException('Discount must be on right range');
+                }
+
+
+                return number_format($this->price - $this->price * ($discount / 100), 2, ',', '.');
+            } else {
+                return '';
+            }
+        } catch (Exception $error) {
+            echo $error->getMessage();
         }
     }
 }

@@ -11,8 +11,19 @@
                         <img src="<?= $product->img_path ?>?random=<?= $product->getId() ?>" alt="" class="card-img-top p-4 rounded-circle">
                         <div class="card-body">
                             <h2><?= $product->getName() ?></h2>
-                            <h5><?= $product->price ?>€</h5>
-                            <span><?= $product->calcDiscount($product->discount) ?>€</span>
+
+                            <div class="d-flex justify-content-around">
+                                <h6 class="text-decoration-line-through">
+                                    Prezzo Originale <?= $product->price ?>€
+                                </h6>
+                                <h6 class="text-danger fw-bold">
+                                    Prezzo Attuale <?= $product->calcDiscount(20) ?>€
+                                </h6>
+                            </div>
+
+
+
+
                             <p>Restano ancora <?= $product->stock_quantity ?> pezzi</p>
 
                         </div>
