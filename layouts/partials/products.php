@@ -12,7 +12,7 @@
                         <div class="card-body">
                             <h2><?= $product->getName() ?></h2>
                             <h5><?= $product->price ?>€</h5>
-                            <span><?= $product->calcDiscount(10) ?>€</span>
+                            <span><?= $product->calcDiscount($product->discount) ?>€</span>
                             <p>Restano ancora <?= $product->stock_quantity ?> pezzi</p>
 
                         </div>
