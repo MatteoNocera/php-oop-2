@@ -1,9 +1,13 @@
 <?php
+
+require_once __DIR__ . '/../Traits/IdGetter.php';
+
 class Product extends Category
 {
+    use IdGetter;
 
     public $category;
-    public $id;
+    protected $id;
     public $name;
     public $price;
     public $stock_quantity;

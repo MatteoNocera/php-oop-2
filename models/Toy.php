@@ -1,6 +1,10 @@
 <?php
+
+require_once __DIR__ . '/../Traits/IdGetter.php';
+
 class Toy extends Product
 {
+    use IdGetter;
 
     public $variant;
 
