@@ -8,9 +8,9 @@
                         <a href="#">
                             <img src="<?= $product->icon ?>" alt="" width="50" class="p-1">
                         </a>
-                        <img src="<?= $product->img_path ?>?random=<?= $product->id ?>" alt="" class="card-img-top p-4 rounded-circle">
+                        <img src="<?= $product->img_path ?>?random=<?= $product->getId() ?>" alt="" class="card-img-top p-4 rounded-circle">
                         <div class="card-body">
-                            <h2><?= $product->name ?></h2>
+                            <h2><?= $product->getName() ?></h2>
                             <h5><?= $product->price ?>€</h5>
                             <p>Restano ancora <?= $product->stock_quantity ?> pezzi</p>
 

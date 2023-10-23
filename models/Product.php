@@ -1,14 +1,17 @@
 <?php
 
 require_once __DIR__ . '/../Traits/IdGetter.php';
+require_once __DIR__ . '/../Traits/NameGetter.php';
+
 
 class Product extends Category
 {
     use IdGetter;
+    use NameGetter;
 
     public $category;
     protected $id;
-    public $name;
+    protected $name;
     public $price;
     public $stock_quantity;
     public $dimension;
